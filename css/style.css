@@ -1,4 +1,7 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     color: #777;
 }
 
@@ -200,36 +203,6 @@ small screens.
 }
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
-@media (min-width: 48em) {
-
-    .header,
-    .content {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    #layout {
-        padding-left: 150px; /* left col width "#menu" */
-        left: 0;
-    }
-    #menu {
-        left: 150px;
-    }
-
-    .menu-link {
-        position: fixed;
-        left: 150px;
-    }
-
-    #layout.active .menu-link {
-        left: 150px;
-    }
-}
-
 @media (max-width: 48em) {
     /* Only apply this when the window is small. Otherwise, the following
     case results in extra padding on the left:
@@ -257,8 +230,3 @@ li{
     height: 100%;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
